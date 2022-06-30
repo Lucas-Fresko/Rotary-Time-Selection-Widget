@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,HardcodedText"
+    android:theme="@style/CustomClockStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/minutesCenter"
+        android:layout_width="@dimen/clock_minutes_background_radius"
+        android:layout_height="@dimen/clock_minutes_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_500"
+        android:src="@drawable/circle_border"
+        app:tint="@color/teal_900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/minute1"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="1"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="6"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute2"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="2"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="12"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute3"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="3"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="18"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute4"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="4"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="24"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute5"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="5"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="30"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute6"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="6"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="36"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute7"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="7"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="42"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute8"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="8"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="48"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute9"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="9"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="54"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute10"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="10"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="60"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute11"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="11"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="66"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute12"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="12"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="72"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute13"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="13"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="78"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute14"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="14"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="84"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute15"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="15"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute16"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="16"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="96"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute17"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="17"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="102"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute18"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="18"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="108"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute19"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="19"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="114"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute20"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="20"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute21"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="21"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="126"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute22"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="22"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="132"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute23"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="23"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="138"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute24"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="24"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="144"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute25"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="25"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute26"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="26"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="156"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute27"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="27"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="162"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute28"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="28"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="168"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute29"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="29"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="174"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute30"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="30"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute31"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="31"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="186"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute32"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="32"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="192"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute33"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="33"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="198"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute34"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="34"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="204"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute35"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="35"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="210"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute36"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="36"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="216"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute37"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="37"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="222"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute38"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="38"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="228"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute39"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="39"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="234"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute40"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="40"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="240"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute41"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="41"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="246"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute42"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="42"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="252"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute43"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="43"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="258"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute44"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="44"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="264"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute45"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="45"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute46"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="46"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="276"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute47"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="47"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="282"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute48"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="48"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="288"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute49"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="49"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="294"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute50"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="50"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="300"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute51"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="51"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="306"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute52"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="52"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="312"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute53"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="53"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="318"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute54"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="54"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="324"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute55"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="55"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="330"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute56"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="56"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="336"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute57"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="57"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="342"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute58"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="58"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="348"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+    <TextView
+        android:id="@+id/minute59"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="59"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="354"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_far" />
+
+    <TextView
+        android:id="@+id/minute60"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="60"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="360"
+        app:layout_constraintCircleRadius="@dimen/minute_radius_close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

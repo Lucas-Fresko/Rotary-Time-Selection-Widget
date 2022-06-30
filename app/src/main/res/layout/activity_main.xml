@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/clock_include"
+        layout="@layout/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/calendar_include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/calendar_include"
+        layout="@layout/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clock_include" />
+
+    <ImageView
+        tools:visibility="gone"
+        android:id="@+id/topSelector"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_baseline_room_24"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toTopOf="@+id/minutes_include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        tools:visibility="gone"
+        android:id="@+id/bottomSelector"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_baseline_room_24"
+        android:backgroundTint="@color/white"
+        android:elevation="1dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/centerView"
+        app:layout_constraintEnd_toEndOf="@+id/centerView"
+        app:layout_constraintStart_toStartOf="@+id/centerView"
+        app:layout_constraintTop_toTopOf="@+id/centerView" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        tools:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/minutes_include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        tools:visibility="gone"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/pm_am_checkbox"
+        android:buttonTint="@color/pm_am_colors"
+        app:layout_constraintCircle="@id/clock_include"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="210dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

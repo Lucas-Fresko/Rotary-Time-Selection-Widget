@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/CustomClockStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/clockHoursLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv1, tv2, tv3, tv4, tv5, tv6, tv7, tv8, tv9, tv10, tv11, tv12"/>
+
+    <ImageView
+        android:id="@+id/centerView"
+        android:layout_width="@dimen/clock_background_radius"
+        android:layout_height="@dimen/clock_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_700"
+        android:src="@drawable/circle_border"
+        app:tint="@color/teal_900"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="1"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="30"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="2"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="60"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="3"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="4"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="5"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="6"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="7"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="210"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="8"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="240"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="9"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="10"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="300"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="11"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="330"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+    <TextView
+        android:id="@+id/tv12"
+        android:layout_width="@dimen/clock_hour_background_radius"
+        android:layout_height="@dimen/clock_hour_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_900"
+        android:gravity="center"
+        android:text="12"
+        app:layout_constraintCircle="@id/centerView"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="@dimen/clock_hour_radius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

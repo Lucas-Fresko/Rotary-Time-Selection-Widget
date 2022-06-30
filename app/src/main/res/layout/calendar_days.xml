@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,HardcodedText"
+    android:theme="@style/CustomClockStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/clockHoursLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="day1, day2, day3, day4, day5,
+        day6, day7, day8, day9, day10, day11, day12, day13, day14,
+        day15, day16, day17, day18, day19, day20, day21, day22, day23,
+        day24, day25, day26, day27, day28, day29, day30, day31"/>
+
+
+    <ImageView
+        android:id="@+id/minutesCenter"
+        android:layout_width="@dimen/clock_minutes_background_radius"
+        android:layout_height="@dimen/clock_minutes_background_radius"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/teal_500"
+        android:src="@drawable/circle_border"
+        app:tint="@color/teal_900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day1"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="1"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="11.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day2"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="2"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="23.2"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day3"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="3"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="34.8"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day4"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="4"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="46.4"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day5"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="5"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="58"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day6"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="6"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="69.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day7"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="7"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="81.3"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day8"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="8"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="92.8"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day9"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="9"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="104.4"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day10"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="10"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="116"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day11"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="11"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="127.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day12"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="12"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="139.2"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day13"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="13"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="150.8"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day14"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="14"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="162.4"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day15"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="15"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="174"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day16"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="16"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="185.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day17"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="17"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="197.2"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day18"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="18"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="208.8"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day19"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="19"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="220.4"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day20"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="20"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="232"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day21"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="21"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="243.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day22"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="22"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="255.2"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day23"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="23"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="266.8"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day24"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="24"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="278.4"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day25"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="25"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="290"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day26"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="26"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="301.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day27"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="27"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="313.2"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day28"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="28"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="324.8"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day29"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="29"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="336.4"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day30"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="30"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="348"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+    <TextView
+        android:id="@+id/day31"
+        android:layout_width="@dimen/clock_minute_background_radius"
+        android:layout_height="@dimen/clock_minute_background_radius"
+        android:theme="@style/ClockMinuteViewStyle"
+        android:text="31"
+        app:layout_constraintCircle="@id/minutesCenter"
+        app:layout_constraintCircleAngle="359.6"
+        app:layout_constraintCircleRadius="@dimen/calendar_days_radius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

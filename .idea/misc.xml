@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/circle.xml" value="0.1895" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/circle_border.xml" value="0.1895" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/ic_am.xml" value="0.193" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/ic_baseline_room_24.xml" value="0.2495" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/ic_pm.xml" value="0.193" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/pm_am_checkbox.xml" value="0.192" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/recycler_decoration.xml" value="0.1245" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/ring.xml" value="0.1895" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/ring_border.xml" value="0.1895" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/drawable/square_border.xml" value="0.1245" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/calendar.xml" value="0.33" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/calendar_days.xml" value="0.22" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/calendar_months.xml" value="0.33" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/calendar_years.xml" value="0.33" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/clock.xml" value="0.22" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/clock_circle_minutes.xml" value="0.35833333333333334" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/clock_display.xml" value="0.33" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/clock_hours.xml" value="0.18489583333333334" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/recycler_divider.xml" value="0.3916015625" />
+        <entry key="..\:/Users/Pakislav/AndroidStudioProjects/RotaryClock/app/src/main/res/layout/year_recycler_item.xml" value="0.44125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
